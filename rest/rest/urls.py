@@ -21,7 +21,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
 
     path('',include('stay.urls')),
-    path('aj', HomeView.as_view(), name='home'),
-    path('accounts/', include('allauth.urls')),
+    path('app2/', include('app2.urls')),
+    # path('aj', HomeView.as_view(), name='home'),
 
 ]

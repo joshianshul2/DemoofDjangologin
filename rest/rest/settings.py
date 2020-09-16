@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'stay',
+    'app2',
 
      
     'django.contrib.sites',
@@ -83,24 +84,24 @@ WSGI_APPLICATION = 'rest.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-#     }
-# }
-
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'test105',
-        'USER': 'root',
-        'PASSWORD':'Anshul1211',
-        'HOST':'localhost',
-        # 'PORT' :5432,
-        'listen_addresses':'*'
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.mysql',
+#         'NAME': 'test105',
+#         'USER': 'root',
+#         'PASSWORD':'Anshul1211',
+#         'HOST':'localhost',
+#         # 'PORT' :5432,
+#         'listen_addresses':'*'
+#     }
+# }
 
 
 

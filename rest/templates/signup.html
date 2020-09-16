@@ -1,0 +1,61 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SignUp</title>
+      <link rel="shortcut icon" href="#" type="{% static 'image/x-icon' %}" />
+      <link rel="apple-touch-icon" href="#" />
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" />
+      <!-- Pogo Slider CSS -->
+      <link rel="stylesheet" href="{% static 'css/pogo-slider.min.css' %}" />
+      <!-- Site CSS -->
+      <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+      <!-- Responsive CSS -->
+      <link rel="stylesheet" href="{% static 'css/responsive.css' %}" />
+      <!-- Custom CSS -->
+      <link rel="stylesheet" href="{% static 'css/custom.css' %}" />
+</head>
+<body>
+ <div class="section contact_section">
+            <div class="container-fluid">
+               <div class="row">
+                  <div class="col-md-6 theme_color_bg fc3726 padding_0">
+                     <div class="full">
+                        <div class="row">
+                           <div class="col-sm-12 col-md-10 offset-lg-1">
+                              <div class="full contact_form">
+                                 <form class="contact_form_inner" action="#" method="POST">
+                                    {% csrf_token %}
+                                    <fieldset>
+                                        <div class="field">
+                                          <input type="text" name="name" placeholder="Your name" />
+                                       </div>
+                                       <div class="field">
+                                          <input type="text" name="username" placeholder="Username" />
+                                       </div>
+                                       <div class="field">
+                                          <input type="password" name="password" placeholder="Password" />
+                                       </div>
+                                <div class="field">
+                                          <input type="text" name="phone_no" placeholder="Phone number" />
+                                       </div>
+
+                                       <div class="field center">
+                                          <button class="margin-top_30">SEND</button>
+                                       </div>
+                                    </fieldset>
+
+
+
+
+                                 </form>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+
+</body>
+</html>

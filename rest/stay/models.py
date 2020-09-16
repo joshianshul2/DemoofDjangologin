@@ -9,6 +9,7 @@ class UserProfile(models.Model) :
 
 
 
+
 class UserForm(forms.ModelForm):
     class Meta:
         model= UserProfile
